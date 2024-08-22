@@ -29,4 +29,19 @@ public class LogAspect {
         }
 
     }
+
+//    클래스 경로로 AOP 구현하는 방식
+//
+//    @Around("execution(* com.example.springstudy..*(..))")
+//    public Object logExecutionTime_2(ProceedingJoinPoint joinPoint) throws Throwable {
+//
+//
+//        try {
+//            return joinPoint.proceed();
+//        } finally {
+//
+//            System.out.println("클래스 경로를 통해 AOP 구현");
+//        }
+//
+//    }
 }
